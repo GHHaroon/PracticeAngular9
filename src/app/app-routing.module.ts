@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { StudentComponent } from './student/student.component';
 import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path: 'studentdetails', component:StudentdetailsComponent
+  },
+  {
+    path: '**', component:PagenotfoundComponent
   }
 ];
 

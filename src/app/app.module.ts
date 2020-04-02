@@ -9,13 +9,15 @@ import { CompanyModule } from './company/company.module';
 import { MyServiceService } from './my-service.service';
 import { StudentComponent } from './student/student.component';
 import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     StudentComponent,
-    StudentdetailsComponent
+    StudentdetailsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
