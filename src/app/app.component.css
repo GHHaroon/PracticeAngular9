@@ -1,0 +1,18 @@
+h1{color: red;}
+h2{color: salmon;}
+div{color: rgb(127, 0, 253);}
+
+.one{
+    color: red;
+}
+
+.two{
+    font-size: 30px;
+}
+.three{
+    color: yellowgreen;
+}
+
+.four{
+    font-weight: bold;
+}
