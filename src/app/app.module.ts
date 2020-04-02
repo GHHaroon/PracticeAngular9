@@ -7,11 +7,15 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { CompanyModule } from './company/company.module';
 import { MyServiceService } from './my-service.service';
+import { StudentComponent } from './student/student.component';
+import { StudentdetailsComponent } from './studentdetails/studentdetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    StudentComponent,
+    StudentdetailsComponent
   ],
   imports: [
     BrowserModule,

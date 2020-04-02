@@ -1,5 +1,6 @@
 import { Component, HostListener, Inject } from '@angular/core';
 import { MyServiceService } from './my-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,12 @@ import { MyServiceService } from './my-service.service';
 })
 export class AppComponent {
   title = 'myAng9App.....!';
+  constructor(private router:Router){
+
+  }
+  student(){
+    this.router.navigate(['/student'])
+  }
   checkingif=true;
   btnClick(){
     alert("You clicked me");

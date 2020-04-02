@@ -5,6 +5,12 @@
 <button (click)='btnClick()'>Click me</button>
 <p [ngStyle]="{'color':'red', 'font-weight': 'bold'}">This is ngStyle example</p> -->
 <h2>Welcome to {{ title }}</h2>
+<h3>Router links example</h3>
+<a [routerLink]="['/student']">Student</a>
+<a [routerLink]="['/studentdetails']">Student Details</a>
+<br>
+<button (click)="student()">Show Student</button>
+<router-outlet></router-outlet>
 <table border="1">
     <tr>
         <td>Emp Code</td>
@@ -55,4 +61,3 @@ Your Name : {{data}}
 <br>
 <input [(ngModel)]='data1'>
 <h2>Enter value : {{data1}}</h2>
-<router-outlet></router-outlet>
