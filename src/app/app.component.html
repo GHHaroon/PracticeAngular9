@@ -5,13 +5,39 @@
 <button (click)='btnClick()'>Click me</button>
 <p [ngStyle]="{'color':'red', 'font-weight': 'bold'}">This is ngStyle example</p> -->
 <h2>Welcome to {{ title }}</h2>
+<div class="container">
+    <div class="row">
+        <div class="form-bg">
+            <form #regForm='ngForm' (ngSubmit)="Register(regForm)">
+                <h2 class="text-center">Registration Form</h2>
+                <br>
+                <div class="form-group">
+                    <input type="text" class="from-control" placeholder="First Name" name="firstName" 
+                    ngModel/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="from-control" placeholder="Last Name" name="lastName" 
+                    ngModel/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="from-control" placeholder="Email" name="emailId" 
+                    ngModel/>
+                </div>
+                <br>
+                <div class="align-center">
+                    <button type="submit" class="btn-default" id="register">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
 <h3>Router links example</h3>
 <a [routerLink]="['/student']">Student</a>
 <a [routerLink]="['/studentdetails']">Student Details</a>
 <a [routerLink]="['/parentdetails']">Parent Details</a>
 <br>
 <button (click)="student()">Show Student</button>
-<router-outlet></router-outlet>
 <table border="1">
     <tr>
         <td>Emp Code</td>

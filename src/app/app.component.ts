@@ -15,6 +15,13 @@ export class AppComponent {
   constructor(private router:Router){
 
   }
+  Register(regForm:any){
+    debugger;
+    var firstName = regForm.controls.firstName.value
+    var lastName = regForm.controls.lastName.value
+    var email = regForm.controls.emailId.value
+    console.log("First Name : ",firstName)
+  }
   student(){
     this.router.navigate(['/student'])
   }
